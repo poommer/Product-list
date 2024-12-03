@@ -1,50 +1,23 @@
-# React + TypeScript + Vite
+# Frontend Mentor - Product list with cart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+We provide the data for the products in a local `data.json` file. So you can use that to populate the UI dynamically if you choose.
 
-Currently, two official plugins are available:
+Your users should be able to:
+Feature
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Add items to the cart and remove them
+- Increase/decrease the number of items in the cart
+- See an order confirmation modal when they click "Confirm Order"
+- Reset their selections when they click "Start New Order"
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
 
-## Expanding the ESLint configuration
+ขอบเขต
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- แตก Branch แยกด้วย ตอนทำ
+- Product list with cart 1 หน้า
+- มีการสร้าง Component และมีการส่ง props
+- ใช้ Redux (ไม่จำกัดว่าจะต้องใช้ Redux-toolkit แล้วแต่จะเลือกใช้)
+- style ไม่จำกัด จะใช้ของอะไรก็ได้ ส่วนเรื่องขนาดของการ์ด หรือ ตัวอักษร ไม่ฟิค
+- การแสดงผล UI ของ 2 แบบ แบบ com กับ mobile ตามตัวอย่าง
+- ยังไม่มีการติดตั้ง library ที่เกี่ยวกับ Redux
