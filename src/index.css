@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: "Red Hat Text", sans-serif;
+}
+
+::-webkit-scrollbar {
+    @apply w-[1rem]
+    
+  }
+  
+  /* สไตล์ของแทร็ก (track) */
+  ::-webkit-scrollbar-track {
+   @apply ml-2 bg-Rose-100 rounded-full 
+  }
+  
+  /* สไตล์ของตัวเลื่อน (thumb) */
+  ::-webkit-scrollbar-thumb {
+     @apply bg-Rose-500 rounded-full h-6 w-2 border-solid border-[3px] border-Rose-100
+  }
+  
+  /* สไตล์เมื่อ hover ตัวเลื่อน */
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-Rose-400
+  }
