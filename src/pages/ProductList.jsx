@@ -3,7 +3,7 @@ import data from '../../data.json';
 import Card from '../components/Card';
 import Cart from '../components/Cart';
 import { useDispatch, useSelector } from 'react-redux';
-import Modal from '../components/modal';
+import Modal from '../components/Modal';
 export default function ProductList() {
   const dispatch = useDispatch();
   const data_state = useSelector(state => state.menu.value)
